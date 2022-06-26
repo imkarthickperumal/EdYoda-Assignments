@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+#mainDiv {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#imgDiv {
+  width: 40%;
+}
+#imgDiv img {
+  width: 100%;
+}
+#detailsDiv {
+  width: 60%;
+  margin-top: 40px;
+  padding-left: 30px;
+}
+.product-detials {
+  margin-bottom: 40px;
+}
+.h1 {
+  font-weight: 300;
+  font-size: 44px;
+  letter-spacing: -2px;
+}
+.h4 {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.price {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.value {
+  color: #009688;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.Description {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939e;
+}
+.product-preview-div h3 {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(27, 25, 25);
+}
+.preview-img-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.preview-img-div img {
+  margin: 5px;
+  width: 15%;
+  height: 30%;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+/* .preview-img-div img.active{
+      border: 2px solid #009688;
+  } */
+.active {
+  border: 2px solid #009688;
+}
+.non {
+  border: none;
+}
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #009688;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+}
+.btn:hover {
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 50%);
+}
+
+@media screen and (max-width: 768px) {
+  #mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #imgDiv {
+    width: 100%;
+  }
+  #imgDiv img {
+    width: 100%;
+  }
+  #detailsDiv {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 15px;
+  }
+
+  .price,
+  .description,
+  .Description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .h1 {
+    font-size: 30px;
+  }
+  .h4 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
